@@ -1,0 +1,151 @@
+.message {
+  @apply flex;
+  @apply gap-4;
+  @apply mb-4;
+  @apply w-full;
+}
+
+.user {
+  @apply flex-row-reverse;
+}
+
+.assistant {
+  @apply flex-row;
+}
+
+.avatar {
+  @apply flex-shrink-0;
+  @apply w-8;
+  @apply h-8;
+  @apply rounded-full;
+  @apply bg-gray-200;
+  @apply dark:bg-gray-700;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+}
+
+.content {
+  @apply max-w-[70%];
+  @apply p-3;
+  @apply rounded-lg;
+}
+
+.user .content {
+  @apply bg-primary-100;
+  @apply dark:bg-primary-900;
+  @apply rounded-br-none;
+}
+
+.assistant .content {
+  @apply bg-gray-100;
+  @apply dark:bg-gray-800;
+  @apply rounded-bl-none;
+}
+
+.text {
+  @apply text-sm;
+  @apply text-gray-900;
+  @apply dark:text-gray-100;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.toolCall {
+  @apply mb-2;
+  @apply p-4;
+  @apply rounded-lg;
+  @apply bg-gray-50;
+  @apply dark:bg-gray-800;
+}
+
+.toolCallName {
+  @apply font-medium;
+  @apply text-primary-600;
+  @apply dark:text-primary-400;
+  @apply mb-1;
+}
+
+.toolCallArgs {
+  @apply text-sm;
+  @apply text-gray-700;
+  @apply dark:text-gray-300;
+}
+
+.toolResult {
+  @apply mt-2;
+  @apply p-4;
+  @apply rounded-lg;
+  @apply bg-gray-100;
+  @apply dark:bg-gray-700;
+}
+
+.toolResultTitle {
+  @apply font-medium;
+  @apply text-primary-500;
+  @apply dark:text-primary-300;
+  @apply mb-1;
+}
+
+.toolResultContent {
+  @apply text-sm;
+  @apply whitespace-pre-wrap;
+  @apply overflow-auto;
+  @apply max-h-64;
+  @apply text-gray-800;
+  @apply dark:text-gray-200;
+}
+
+.argumentsPre {
+  @apply text-xs;
+  @apply overflow-auto;
+  @apply max-h-40;
+  @apply p-2;
+  @apply bg-gray-100;
+  @apply dark:bg-gray-800;
+  @apply rounded;
+}
+
+.argumentsPreSimple {
+  @apply text-xs;
+}
+
+@media (prefers-color-scheme: dark) {
+  .assistant {
+    background-color: rgba(59, 130, 246, 0.2);
+  }
+
+  .user {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+
+  .role {
+    color: #999;
+  }
+
+  .assistant .messageContent,
+  .user .messageContent {
+    color: #e5e5e5;
+  }
+
+  .toolCall {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .toolCallName {
+    color: #60a5fa;
+  }
+
+  .toolCallArgs {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+
+  .toolResult {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  .toolResultTitle {
+    color: #34d399;
+  }
+} 

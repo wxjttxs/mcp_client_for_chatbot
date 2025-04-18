@@ -1,0 +1,187 @@
+/* 添加服务器模态框样式 */
+.server-modal .ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.server-modal .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  padding: 16px 24px;
+}
+
+.server-modal .ant-modal-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000d9;
+  text-align: center;
+}
+
+.server-modal .ant-modal-close {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.server-modal .ant-modal-close:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.server-modal .ant-form-item-label > label {
+  font-weight: 500;
+  color: #000000d9;
+}
+
+.server-modal .required-star {
+  color: #ff4d4f;
+  margin-left: 4px;
+  font-family: SimSun, sans-serif;
+}
+
+.server-modal .ant-radio-wrapper {
+  margin-right: 24px;
+}
+
+.server-modal .ant-radio-checked .ant-radio-inner {
+  border-color: #52c41a;
+  background-color: #52c41a;
+}
+
+.server-modal .ant-modal-footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 24px;
+}
+
+.server-modal .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.server-modal .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.server-modal .ant-switch-checked {
+  background-color: #52c41a;
+}
+
+/* SSE服务器样式 */
+.server-type-radio .ant-radio-wrapper-checked {
+  color: #52c41a;
+}
+
+.sse-url-item .ant-form-item-children {
+  position: relative;
+}
+
+.sse-url-item .ant-input-suffix {
+  right: 12px;
+}
+
+/* SSE链接样式增强 */
+.sse-event-stream {
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 12px;
+  background-color: #fafafa;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 12px;
+}
+
+.sse-event-item {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.sse-event-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sse-event-type {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.sse-event-type.event-connected {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.sse-event-type.event-tool-result {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.sse-event-type.event-tool-call-error {
+  background-color: #fff2f0;
+  color: #ff4d4f;
+}
+
+.sse-event-type.event-tool-call-complete {
+  background-color: #fffbe6;
+  color: #faad14;
+}
+
+.sse-event-data {
+  padding: 6px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow-x: auto;
+  border: 1px solid #f0f0f0;
+}
+
+/* SSE服务器表单样式 */
+.sse-server-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sse-server-form .ant-card-head {
+  background-color: #f0f8ff;
+  border-bottom: 1px solid #e6f7ff;
+}
+
+.sse-server-form .ant-card-head-title {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.sse-server-form .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.sse-server-form .ant-form-item-required::before {
+  display: none !important;
+}
+
+.sse-server-form .ant-input:focus,
+.sse-server-form .ant-input-focused {
+  border-color: #52c41a;
+  box-shadow: 0 0 0 2px rgba(82, 196, 26, 0.2);
+}
+
+/* MCP服务器页面标题 */
+.mcp-server-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mcp-server-title .ant-typography {
+  margin: 0;
+}
+
+.mcp-server-title .anticon {
+  margin-right: 8px;
+  font-size: 18px;
+} 

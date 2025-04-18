@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "tavily-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp@0.1.4"
+      ],
+      "env": {
+        "TAVILY_API_KEY": "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"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "amap-amap-sse": {
+      "url": "https://mcp.amap.com/sse?key=d66dcdc91151608a4fd7dd17f098dec1"
+    },
+    "baidu_ai_search": {
+      "url": "http://appbuilder.baidu.com/v2/ai_search/mcp/sse?api_key=Bearer+bce-v3/ALTAK-QD2QzIYASChAqDKfwlYWG/b26482b050cd1ad0e9811dc09afc3b4c21207dad",
+      "args": [],
+      "env": {}
+    }
+  }
+}
